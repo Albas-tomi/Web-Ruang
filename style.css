@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Quicksand&display=swap');
+* {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #FCF8E8;
+}
+
+header {
+    display: inline;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Dropdown */
+
+.dropbtn {
+    background-color: #E9DAC1;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    bottom: 10px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    margin-left: 45px;
+    text-align: center;
+    display: none;
+    background-color: #4e7274;
+    position: absolute;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    background-color: none;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/*======================= */
+
+.profil-header {
+    padding: 50px;
+    text-align: center;
+    background-color: #E9DAC1;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    margin-top: 10px;
+}
+
+article {
+    background-color: #E9DAC1;
+}
+
+.card img {
+    width: 200px;
+    padding: 20px;
+}
+
+.card h4 {
+    margin: 10px 0 10px 0;
+}
+
+.basic {
+    flex-basis: 80%;
+}
+
+.basicAside {
+    flex-basis: 20%;
+}
+
+nav {
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+    background-color: #54BAB9;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 15px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+.card {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+aside {
+    text-align: center;
+    align-items: center;
+    margin-top: 210px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    height: 20%;
+    box-shadow: 1px 1px 2px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #E9DAC1;
+}
+
+.profil {
+    text-align: center;
+}
+
+.profil img {
+    box-shadow: 1px 2px 4px;
+    margin: auto;
+    width: 150px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.more-info p {
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11;
+}
+
+.more-info {
+    text-align: center;
+}
+
+.feature-image {
+    width: 250px;
+    object-position: center;
+}
+
+footer {
+    padding: 30px;
+    color: white;
+    background-color: #18978F;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hitung {
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #A5C9CA;
+    padding: 20px;
+}
+
+form {
+    align-items: center;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+h5 {
+    margin-top: 10px;
+}
+
+input {
+    width: 200px;
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 2px 1px 4px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+    }
+    aside {
+        margin: 20px auto;
+    }
+    .profil img {
+        width: 200px;
+    }
+}
