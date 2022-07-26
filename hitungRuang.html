@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Rumus Bangun Ruang</title>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header id="home">
+        <div class="profil-header">
+            <h1>---> Bangun Ruang
+                <---</h1>
+                    <p>Bangun ruang adalah salah satu bagian dari bidang geometris. Bangun ruang adalah suatu bangunan tiga dimensi yang memiliki ruang atau volume dan juga sisi yang membatasinya. Bangun ruang dapat dibagi menjadi dua jenis yaitu bangun
+                        ruang sisi lengkung dan bangun ruang sisi datar.</p>
+        </div>
+
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li>
+
+                    <div class="dropdown">
+                        <button onclick="dropMy()" class="dropbtn">Bangun Ruang</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#kubus">Kubus</a>
+                            <a href="#balok">Balok</a>
+                            <a href="#tabung">Tabung</a>
+                            <a href="#bola">Bola</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Main -->
+        <main>
+            <div class="content basic">
+                <div class="title">
+                    <h1 id="Judul">Bangun Ruang Sisi Datar</h1>
+                    <p>Telah disebutkan pada bagian sebelumnya bahwa bangun ruang sisi datar terdiri dari kubus, balok, prisma, dan limas. Pembahasan mengenai bangun ruang sisi datar akan dijelaskan pada bagian ini.</p>
+                </div>
+                <article id="kubus" class="card">
+                    <h2>Bangun Ruang Kubus</h2>
+                    <img src="image/Kubus.jpg" alt="" class="feature-image">
+                    <p>Bangun Ruang Kubus Bangun kubus adalah bangun ruang sisi datar yang semua sisinya berbentuk persegi dan semua rusuknya sama panjang. Ingat ya, sifat kubus yang paling utama adalah, semua sisinya persegi dan semua rusuknya sama panjang.</p>
+                    <h4>Sifat-sifat Kubus</h4>
+                    <ul>
+                        <li type="1">Kubus memiliki enam sisi berbentuk persegi,</li>
+                        <li type="1">Semua sisi dari bangun kubus memiliki ukuran serta dimensi yang sama,</li>
+                        <li type="1">Semua sudut bidang kubus membentuk garis bidang 90 derajat,</li>
+                        <li type="1">Kubus memiliki 12 rusuk yang sama panjang,</li>
+                        <li type="1">Kubus memiliki 12 diagonal sisi / diagonal bidang,</li>
+                        <li type="1">Kubus memiliki 4 diagonal ruang,</li>
+                        <li type="1">Kubus memiliki 6 buah bidang diagonal berbentuk persegi panjang.</li>
+                    </ul>
+                    <div class="hitung">
+
+                        <h3>Rumus Menghitung Bangun Ruang Kubus</h3>
+                        <h5>Menghitung Volume Kubus (V) = s × s × s</h5>
+                        <h5>Menghitung Luas permukaan Kubus (L) = 6 × (s × s)</h5>
+                        <form id="inputKubus">
+                            <label>Sisi</label>
+                            <input type="number" id="sisi">
+                        </form>
+                        <h3 id="hasilKubus"></h3>
+                        <button type="submit" onclick="luasKubus()">Luas</button>
+                        <button type="submit" onclick="volumeKubus()">Volume</button>
+                        <button type="reset" onclick="hapusK()">Reset</button>
+                    </div>
+                </article>
+
+
+                <article id="balok" class="card">
+                    <h2>Bangun Ruang Balok</h2>
+                    <img src="image/Balok.jpg" alt="" class="feature-image">
+                    <p>Pada gambar tersebut terdapat balok yang terdiri dari 6 sisi. Bangun balok memiliki 12 rusuk, 4 diagonal ruang, dan 6 bidang diagonal.</p>
+                    <h4>Sifat-sifat Balok</h4>
+                    <ul>
+                        <li type="1">Balok memiliki enam bidang sisi yang berbeda ukurannya. Tapi, setiap sisi yang berhadapan memiliki bentuk dan juga ukuran yang sama.</li>
+                        <li type="1">Ada tiga pasang sisi yang saling berhadapan pada balok, di mana sisi-sisi balok terdiri dari bangun datar persegi panjang.</li>
+                        <li type="1">Balok memiliki 12 rusuk, tapi tidak sama panjang. Ada tiga kelompok rusuk yang masing-masing terdiri dari empat rusuk yang sama panjangnya. </li>
+                        <li type="1">Balok memiliki 8 titik sudut.</li>
+                    </ul>
+                    <div class="hitung">
+                        <h3>Rumus Menghitung Bangun Ruang Balok</h3>
+                        <h5>Rumus menghitung Volume Balok (V) = p × l × t</h5>
+                        <h5>Rumus Luas permukaan Balok (L) = 2 × ( pl + lt + pt)</h5>
+                        <form id="inputBalok">
+                            <label>Panjang</label>
+                            <input type="number" id="panjang">
+                            <label>Lebar</label>
+                            <input type="number" id="lebar">
+                            <label>Tinggi</label>
+                            <input type="number" id="tinggi">
+                        </form>
+                        <h3 id="hasilBalok"></h3>
+                        <button type="submit" onclick="luasBalok()">Luas</button>
+                        <button type="submit" onclick="volumeBalok()">Volume</button>
+                        <button type="reset" onclick="hapus()">Reset</button>
+                    </div>
+                </article>
+
+                <div class="title">
+                    <h1 id="judul">Bangun Ruang Sisi Lengkung</h1>
+                    <p>Beberapa bentuk bangun ruang sisi lengkung yaitu tabung, kerucut, dan bola. Perhatikan penjelasan di bawah ini.</p>
+                </div>
+                <article id="tabung" class="card">
+                    <h2>Bangun Ruang Tabung</h2>
+                    <img src="image/Tabung.jpg" alt="" class="feature-image">
+                    <p>abung terbentuk oleh 2 buah lingkaran identik dan sejajar serta sebuah Bangun persegi panjang menyelimuti kedua lingkaran tersebut. Sifat – Sifat Bangun Ruang Tabung adalah:</p>
+                    <ul>
+                        <li type="1">Memiliki Alas dan Tutup yang berbentuk Lingkaran</li>
+                        <li type="1">Jarak antara lingkaran tutup dan lingkaran alas disebut dengan tinggi tabung</li>
+                        <li type="1">Jaring Tabung berupa 1 buah persegi panjang dan 2 buah lingkaran</li>
+                        <li type="1">Bidang Tegak Tabung itu berupa lengkungan yg disebut juga dengan selimut tabung</li>
+                    </ul>
+                    <div class="hitung">
+                        <h3>Rumus Menghitung Bangun Ruang Tabung</h3>
+                        <h5>Rumus luas permukaan tabung = (2 × Luas alas) + (Keliling alas × tinggi tabung)</h5>
+                        <h5>Rumus volume tabung = π × r² × t</h5>
+                        <h3 id="hasilTabung"></h3>
+                        <form id="inputTabung">
+                            <label for="">Jari-jari</label>
+                            <input type="number" id="jari-jari">
+                            <label for="">Tinggi</label>
+                            <input type="number" id="tinggiTabung">
+
+                        </form>
+                        <button onclick="luasTabung()">Luas</button>
+                        <button onclick="volumeTabung()">Volume</button>
+                        <button onclick="hapusTabung()">Reset</button>
+
+                    </div>
+                </article>
+
+                <article id="bola" class="card">
+                    <h2>Bangun Ruang Bola</h2>
+                    <img src="image/Bola.jpg" alt="" class="feature-image">
+                    <p>Bola merupakan bangun ruang yang dibentuk oleh suatu lingkaran tak hingga dengan jari-jari yang sama panjang serta berpusat pada satu titik dengan ukuran yang sama. Sifat-sifat bangun ruang bola ini adalah:</p>
+                    <ul>
+                        <li type="1">Mempunyai 1 buah sisi</li>
+                        <li type="1">Mempunyai 1 buah titik pusat</li>
+                        <li type="1">Tidak mempunyai titik sudut</li>
+                        <li type="1">Mempunyai jari jari yg tak terhingga dan semuanya itu sama panjang</li>
+                    </ul>
+                    <div class="hitung">
+                        <h3>Rumus Menghitung Bangun Ruang Bola</h3>
+                        <h5>Rumus luas permukaan bola = 4 × π × r²</h5>
+                        <h5>Rumus volume bola = 4/3 × π × r3</h5>
+                        <form action="" id="inputBola">
+                            <label for="">Jari-jari</label>
+                            <input type="number" id="jariBola">
+                        </form>
+                        <h3 id="hasilBola"></h3>
+                        <button onclick="luasBola()">Luas</button>
+                        <button onclick="volumeBola()">Volume</button>
+                        <button onclick="hapusBola()">Reset</button>
+
+
+                    </div>
+                </article>
+            </div>
+
+
+            <aside class="basicAside">
+
+                <div id="profil" class="profil">
+                    <h3>About Me</h3>
+                    <img src="image/profil.jpg" alt="">
+                </div>
+                <div class="more-info">
+                    <p>
+                        Nama saya Muhammad Albas Tomi. Saya dilahirkan di sebuah kota yang dijuluki kota Singa pada tanggal 15 Mei 2000. Sejak kecil saya tinggal di kota kelahiran bersama dengan dua orangtu serta dua orang kakak laki-laki. Saya sangat bersyukur dilahirkan di
+                        tengah-tengah keluarga yang sangat menyayangi diri saya. Selain itu keluarga ini juga sangat menjunjung tinggi nilai-nilai religius, sederhana, dan disiplin dalam segala hal.
+                    </p>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer>
+        &copy;2022, Tumpang, Malang Jawa Timur
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
